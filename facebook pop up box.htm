@@ -1,0 +1,330 @@
+<style type="text/css">
+.text-input, .select-box{
+	margin:0 2px;
+	padding:4px 6px;
+	border: 1px solid #F9780E;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: gergia;
+	font-style: italic;
+
+	-webkit-box-shadow: 1px 1px 1px #FC7507;
+	-moz-box-shadow: 1px 1px 1px #FC7507;
+	box-shadow: 1px 1px 1px #FC7507;
+	font-size: 14px;
+	color: #666;
+	max-width:auto;
+}
+
+
+label       { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:15px; font-weight:bold; }
+
+fieldset    { padding:0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+			#outer-wrapper {font-family: Verdana, Arial;}
+			#content-wrapper { width: 98%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left; 
+background:#ffffff;
+border:2px solid #ffffff;
+-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+}
+			#content-wrapper h2 {text-align:center;font-size:20px;margin: 5px 0 1em ;padding: 3px 10px;background-color: #ffffff;font-size:16px;color:#000;border:1px solid #111;
+-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+}
+			.redi{-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+
+.button {
+	background: #f7f8f9;
+	background: -webkit-linear-gradient(top, #f7f8f9 0%, #e9e9e9 100%);
+	background: -moz-linear-gradient(top, #f7f8f9 0%, #e9e9e9 100%);
+	background: -o-linear-gradient(top, #f7f8f9 0%, #e9e9e9 100%);
+	background: -ms-linear-gradient(top, #f7f8f9 0%, #e9e9e9 100%);
+	background: linear-gradient(top, #f7f8f9 0%, #e9e9e9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f8f9', endColorstr='#e9e9e9',GradientType=0 );
+	border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 6px 12px;
+	margin:0;
+	-webkit-box-shadow: 0 0 1px #f9f9f9 inset, 1px 1px 1px #dfdfdf;
+	-moz-box-shadow: 0 0 1px #f9f9f9 inset, 1px 1px 1px #dfdfdf;
+	box-shadow: 0 0 1px #f9f9f9 inset, 1px 1px 1px #dfdfdf;
+	color: #888;
+	text-shadow: 0 1px 0 #fff;
+	line-height: 1.2;
+	cursor: pointer;
+	font-size: 13px;
+}
+.button:hover{
+	background: #f1f1f1;
+	background: -webkit-linear-gradient(top, #f1f1f1 0%, #e0e0e0 100%);
+	background: -moz-linear-gradient(top, #f1f1f1 0%, #e0e0e0 100%);
+	background: -o-linear-gradient(top, #f1f1f1 0%, #e0e0e0 100%);
+	background: -ms-linear-gradient(top, #f1f1f1 0%, #e0e0e0 100%);
+	background: linear-gradient(top, #f1f1f1 0%, #e0e0e0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e0e0e0',GradientType=0 );
+	text-decoration:none !important;
+}
+		</style>
+<script>
+function Skgtrickscodegen() {
+var SkgtricksnitFurl=document.getElementsByName("Skgtricksfurl")[0].value;
+var SkgtricksFurl=SkgtricksnitFurl.replace(/\s/gi,"");
+var SkgtricksEFurl=encodeURIComponent(SkgtricksFurl);
+var bgcolor = document.getElementsByName("Skgtricksbgcolor")[0].value;
+var bordercolor = document.getElementsByName("Skgtricksbordercolor")[0].value;
+var fbbadgecol = document.getElementsByName("Skgtricksbadgecolor")[0].value;
+var colorscheme = document.getElementsByName("Skgtrickscolorscheme")[0].value;
+var w = document.getElementsByName("Skgtricksw")[0].value;
+var h = document.getElementsByName("Skgtricksh")[0].value;
+var of = document.getElementsByName("Skgtricksof")[0].value;
+document.getElementsByName("go")[0].disabled=false;
+var widget = document.getElementsByName("widget.content")[0];
+var Skgtrickscode = "";
+for (i = 0; i < document.getElementsByName("Skgtricks").length; i++) 
+{ 
+{Skgtrickscode = document.getElementsByName("Skgtricks")[i].value}
+}
+widget.value = "";
+		if (Skgtrickscode == 1) {
+			widget.value = "<style type=\"text\/css\">\n";
+widget.value += "\/*<![CDATA[*\/\n";
+widget.value += "#fbplikebox{display: block;padding: 0;z-index: 99999;position: fixed;}.fbplbadge {background-color:#"+ fbbadgecol +";display: block;height: 150px;top: 50%;margin-top: -75px;position: absolute;right: -47px;width: 47px;background-image: url(\"http:\/\/1.bp.blogspot.com\/-si8RqHzR8YA\/T9yn4fMA9wI\/AAAAAAAADUs\/TIiffednqVM\/s1600\/Skgtricks_vertical-left.png\");background-repeat: no-repeat;overflow: hidden;-webkit-border-top-right-radius: 8px;-webkit-border-bottom-right-radius: 8px;-moz-border-radius-topright: 8px;-moz-border-radius-bottomright: 8px;border-top-right-radius: 8px;border-bottom-right-radius: 8px;}.Skgtricksfbplikebox span{bottom: 12px;font: 8px \"lucida grande\",tahoma,verdana,arial,sans-serif;position: absolute;right: 6px;text-align: right;z-index: 99999;}.Skgtricksfbplikebox span a{color: #808080;text-decoration:none;}.Skgtricksfbplikebox span a:hover{text-decoration:underline;}\n";
+widget.value += "\/*]]>*\/\n";
+widget.value += "<\/style>\n";
+widget.value += "<script type=\"text\/javascript\">\n";
+widget.value += "\/*<![CDATA[*\/\n";
+widget.value += "    (function(Skgtricks){\n";
+widget.value += "Skgtricks(document).ready(function(){\n";
+widget.value += "var $dur = \"medium\"; \/\/ Duration of Animation\n";
+widget.value += "Skgtricks(\"#fbplikebox\").css({left: -"+ w +", \"top\" : "+ of +" })\n";
+widget.value += "Skgtricks(\"#fbplikebox\").hover(function () {\n";
+widget.value += "Skgtricks(this).stop().animate({\n";
+widget.value += " left: 0\n";
+widget.value += "}, $dur);\n";
+widget.value += "}, function () {\n";
+widget.value += "Skgtricks(this).stop().animate({\n";
+widget.value += "left: -"+ w +"\n";
+widget.value += "}, $dur);\n";
+widget.value += "});\n";
+widget.value += "Skgtricks(\"#fbplikebox\").show();\n";
+widget.value += "});\n";
+widget.value += "})(jQuery);\n";
+widget.value += "\/*]]>*\/\n";
+widget.value += "<\/script>\n";
+widget.value += "<div class=\"Skgtricksfbplikebox\">
+\n";
+widget.value += "<div id=\"fbplikebox\" style=\"display:none;\">
+\n";
+widget.value += "<div class=\"fbplbadge\">
+<\/div> \n";
+widget.value += "<iframe src=\"http:\/\/www.facebook.com\/plugins\/likebox.php?href="+SkgtricksEFurl+"&amp;width="+ w +"&amp;height="+ h +"&amp;colorscheme="+ colorscheme +"&amp;show_faces=true&amp;border_color=%23"+ bordercolor +"&amp;stream=false&amp;header=false\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:"+ w +"px; height:"+ h +"px;background:#"+ bgcolor +";\" allowtransparency=\"true\">\n";
+widget.value += "<\/iframe>\n";
+widget.value += "<span>\n";
+widget.value += "By <a href=\"http:\/\/Skgtricks.blogspot.com\/\">Skgtricks<\/a> \/ <a href=\"http:\/\/Skgtricks.blogspot.com\/2012\/04\/add-static-facebook-pop-out-like-box.html\">+Get This!<\/a>\n";
+widget.value += "<\/span>\n";
+widget.value += "<\/div>\n";
+widget.value += "<\/div>\n";
+		}
+		if (Skgtrickscode == 2) {
+			widget.value = "<style type=\"text\/css\">\n";
+widget.value += "\/*<![CDATA[*\/\n";
+widget.value += "#fbplikebox{display: block;padding: 0;z-index: 99999;position: fixed;}.fbplbadge {background-color:#"+ fbbadgecol +";display: block;height: 150px;top: 50%;margin-top: -75px;position: absolute;left: -47px;width: 47px;background-image: url(\"http:\/\/4.bp.blogspot.com\/-GACw7ApUC7Q\/T9yn4xcSjjI\/AAAAAAAADU0\/riFGzBVgF-k\/s1600\/Skgtricks_vertical-right.png\");background-repeat: no-repeat;overflow: hidden;-webkit-border-top-left-radius: 8px;-webkit-border-bottom-left-radius: 8px;-moz-border-radius-topleft: 8px;-moz-border-radius-bottomleft: 8px;border-top-left-radius: 8px;border-bottom-left-radius: 8px;}.Skgtricksfbplikebox span{bottom: 12px;font: 8px \"lucida grande\",tahoma,verdana,arial,sans-serif;position: absolute;right: 6px;text-align: right;z-index: 99999;}.Skgtricksfbplikebox span a{color: #808080;text-decoration:none;}.Skgtricksfbplikebox span a:hover{text-decoration:underline;}\n";
+widget.value += "\/*]]>*\/\n";
+widget.value += "<\/style>\n";
+widget.value += "<script type=\"text\/javascript\">\n";
+widget.value += "\/*<![CDATA[*\/\n";
+widget.value += "(function(Skgtricks){\n";
+widget.value += "Skgtricks(document).ready(function(){\n";
+widget.value += "var $dur = \"medium\"; \/\/ Duration of Animation\n";
+widget.value += "Skgtricks(\"#fbplikebox\").css({right: -"+ w +", \"top\" : "+ of +" })\n";
+widget.value += "Skgtricks(\"#fbplikebox\").hover(function () {\n";
+widget.value += "Skgtricks(this).stop().animate({\n";
+widget.value += "right: 0\n";
+widget.value += "}, $dur);\n";
+widget.value += "}, function () {\n";
+widget.value += "Skgtricks(this).stop().animate({\n";
+widget.value += "right: -"+ w +"\n";
+widget.value += "}, $dur);\n";
+widget.value += "});\n";
+widget.value += "Skgtricks(\"#fbplikebox\").show();\n";
+widget.value += "});\n";
+widget.value += "})(jQuery);\n";
+widget.value += "\/*]]>*\/\n";
+widget.value += "<\/script>\n";
+widget.value += "<div class=\"Skgtricksfbplikebox\">
+\n";
+widget.value += "<div id=\"fbplikebox\" style=\"display:none;\">
+\n";
+widget.value += "<div class=\"fbplbadge\">
+<\/div>\n";
+widget.value += " <iframe src=\"http:\/\/www.facebook.com\/plugins\/likebox.php?href="+SkgtricksEFurl+"&amp;width="+ w +"&amp;height="+ h +"&amp;colorscheme="+ colorscheme +"&amp;show_faces=true&amp;border_color=%23"+ bordercolor +"&amp;stream=false&amp;header=false\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:"+ w +"px; height:"+ h +"px;background:#"+ bgcolor +";\" allowtransparency=\"true\">\n";
+widget.value += "<\/iframe>\n";
+widget.value += "<span>\n";
+widget.value += "By <a href=\"http:\/\/Skgtricks.blogspot.com\/\">Skgtricks<\/a> \/ <a href=\"http:\/\/Skgtricks.blogspot.com\/2012\/04\/add-static-facebook-pop-out-like-box.html\">+Get This!<\/a>\n";
+widget.value += "<\/span>\n";
+widget.value += "<\/div>\n";
+widget.value += "<\/div>\n";
+		}
+		if (Skgtrickscode == 3) {
+			widget.value = "<style type=\"text\/css\">\n";
+widget.value += "\/*<![CDATA[*\/\n";
+widget.value += "#fbplikebox{display: block;padding: 0;z-index: 99999;position: fixed;}.fbplbadge {background-color:#"+ fbbadgecol +";display: block;height: 47px;left: 50%;margin-left: -75px;position: absolute;bottom: -47px;width: 150px;background-image: url(\"http:\/\/4.bp.blogspot.com\/-OAA68Z5JbKE\/T9yn3q-xidI\/AAAAAAAADUk\/WpdMLjCjC94\/s1600\/Skgtricks_horizantal.png\");background-repeat: no-repeat;overflow: hidden;-webkit-border-bottom-right-radius: 8px;-webkit-border-bottom-left-radius: 8px;-moz-border-radius-bottomright: 8px;-moz-border-radius-bottomleft: 8px;border-bottom-right-radius: 8px;border-bottom-left-radius: 8px;}.Skgtricksfbplikebox span{bottom: 12px;font: 8px \"lucida grande\",tahoma,verdana,arial,sans-serif;position: absolute;right: 6px;text-align: right;z-index: 99999;}.Skgtricksfbplikebox span a{color: #808080;text-decoration:none;}.Skgtricksfbplikebox span a:hover{text-decoration:underline;}\n";
+widget.value += "\/*]]>*\/\n";
+widget.value += "<\/style>\n";
+widget.value += "<script type=\"text\/javascript\">\n";
+widget.value += "\/*<![CDATA[*\/\n";
+widget.value += "(function(Skgtricks){\n";
+widget.value += "Skgtricks(document).ready(function(){\n";
+widget.value += "var $dur = \"medium\"; \/\/ Duration of Animation\n";
+widget.value += "Skgtricks(\"#fbplikebox\").css({top: -"+ h +", \"left\" : "+ of +" })\n";
+widget.value += "Skgtricks(\"#fbplikebox\").hover(function () {\n";
+widget.value += "Skgtricks(this).stop().animate({\n";
+widget.value += "top: 0\n";
+widget.value += "}, $dur);\n";
+widget.value += "}, function () {\n";
+widget.value += "Skgtricks(this).stop().animate({\n";
+widget.value += "top: -"+ h +"\n";
+widget.value += "}, $dur);\n";
+widget.value += "});\n";
+widget.value += "Skgtricks(\"#fbplikebox\").show();\n";
+widget.value += "});\n";
+widget.value += "})(jQuery);\n";
+widget.value += "\/*]]>*\/\n";
+widget.value += "<\/script>\n";
+widget.value += "<div class=\"Skgtricksfbplikebox\">
+\n";
+widget.value += "<div id=\"fbplikebox\" style=\"display:none;\">
+\n";
+widget.value += "<div class=\"fbplbadge\">
+\n";
+widget.value += "<\/div>\n";
+widget.value += "<iframe src=\"http:\/\/www.facebook.com\/plugins\/likebox.php?href="+SkgtricksEFurl+"&amp;width="+ w +"&amp;height="+ h +"&amp;colorscheme="+ colorscheme +"t&amp;show_faces=true&amp;border_color=%23"+ bordercolor +"&amp;stream=false&amp;header=false\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:"+ w +"px; height:"+ h +"px;background:#"+ bgcolor +";\" allowtransparency=\"true\"><\/iframe>\n";
+widget.value += "<span>\n";
+widget.value += "By <a href=\"http:\/\/Skgtricks.blogspot.com\/\">Skgtricks<\/a> \/ <a href=\"http:\/\/Skgtricks.blogspot.com\/2012\/04\/add-static-facebook-pop-out-like-box.html\">+Get This!<\/a>\n";
+widget.value += "<\/span>\n";
+widget.value += "<\/div>\n";
+widget.value += "<\/div>\n";
+		}
+		if (Skgtrickscode == 4) {
+widget.value += "<style type=\"text\/css\">\n";
+widget.value += "\/*<![CDATA[*\/\n";
+widget.value += "#fbplikebox{display: block;padding: 0;z-index: 99999;position: fixed;}.fbplbadge {background-color:#"+ fbbadgecol +";display: block;height: 47px;left: 50%;margin-left: -75px;position: absolute;top: -47px;width: 150px;background-image: url(\"http:\/\/4.bp.blogspot.com\/-OAA68Z5JbKE\/T9yn3q-xidI\/AAAAAAAADUk\/WpdMLjCjC94\/s1600\/Skgtricks_horizantal.png\");background-repeat: no-repeat;-webkit-border-top-left-radius: 8px;-webkit-border-top-right-radius: 8px;-moz-border-radius-topleft: 8px;-moz-border-radius-topright: 8px;border-top-left-radius: 8px;border-top-right-radius: 8px;overflow: hidden;}.Skgtricksfbplikebox span{bottom: 12px;font: 8px \"lucida grande\",tahoma,verdana,arial,sans-serif;position: absolute;right: 6px;text-align: right;z-index: 99999;}.Skgtricksfbplikebox span a{color: #808080;text-decoration:none;}.Skgtricksfbplikebox span a:hover{text-decoration:underline;}\n";
+widget.value += "\/*]]>*\/\n";
+widget.value += "<\/style>\n";
+widget.value += "<script type=\"text\/javascript\">\n";
+widget.value += "\/*<![CDATA[*\/\n";
+widget.value += "(function(Skgtricks){\n";
+widget.value += "Skgtricks(document).ready(function(){\n";
+widget.value += "var $dur = \"medium\"; \/\/ Duration of Animation\n";
+widget.value += "Skgtricks(\"#fbplikebox\").css({bottom: -"+ h +", \"left\" : "+ of +" })\n";
+widget.value += "Skgtricks(\"#fbplikebox\").hover(function () {\n";
+widget.value += "Skgtricks(this).stop().animate({\n";
+widget.value += "bottom: 0\n";
+widget.value += "}, $dur);\n";
+widget.value += "}, function () {\n";
+widget.value += "Skgtricks(this).stop().animate({\n";
+widget.value += "bottom: -"+ h +"\n";
+widget.value += "}, $dur);\n";
+widget.value += "});\n";
+widget.value += "Skgtricks(\"#fbplikebox\").show();\n";
+widget.value += "});\n";
+widget.value += "})(jQuery);\n";
+widget.value += "\/*]]>*\/\n";
+widget.value += "<\/script>\n";
+widget.value += "<div class=\"Skgtricksfbplikebox\">
+\n";
+widget.value += "<div id=\"fbplikebox\" style=\"display:none;\">
+\n";
+widget.value += "<div class=\"fbplbadge\">
+<\/div>\n";
+widget.value += "<iframe src=\"http:\/\/www.facebook.com\/plugins\/likebox.php?href="+SkgtricksEFurl+"&amp;width="+ w +"&amp;height="+ h +"&amp;colorscheme="+ colorscheme +"&amp;show_faces=true&amp;border_color=%23"+ bordercolor +"&amp;stream=false&amp;header=false\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:"+ w +"px; height:"+ h +"px;background:#"+ bgcolor +";\" allowtransparency=\"true\">\n";
+widget.value += "<\/iframe>\n";
+widget.value += "<span>\n";
+widget.value += "By <a href=\"http:\/\/skgtricks.blogspot.com\/\">Skgtricks<\/a> \/ <a href=\"http:\/\/skgtricks.blogspot.com\/2012\/04\/add-static-facebook-pop-out-like-box.html\">+Get This!<\/a>\n";
+widget.value += "<\/span>\n";
+widget.value += "<\/div>\n";
+widget.value += "<\/div>\n";
+}}
+</script>
+
+
+<br />
+
+<h2>
+Facebook Popout Likebox widget Generator by Skgtricks</h2>
+<fieldset class="redi">
+<legend align="left" class="redi" style="border: 1px solid #7F9DB9; margin-left: 20px; padding: 3px 10px;">Settings</legend><br />
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank">
+<table style="width: 100%px;">
+<tbody>
+<tr>
+<td width="60%"><label for="Skgtricksfurl">Facebook Page URL</label>:</td>
+<td width="40%"><input class="text-input" id="Skgtricksfurl" name="Skgtricksfurl" size="30" type="url" value="https://www.facebook.com/pages/Skgtricks/565233286861061" /></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width="60%"><label for="Skgtricksw">Width</label>:</td>
+<td width="40%"><input class="text-input" id="Skgtricksw" name="Skgtricksw" size="6" type="number" value="250" /> px</td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width="60%"><label for="Skgtricksh">Height</label>:</td>
+<td width="40%"><input class="text-input" id="Skgtricksh" name="Skgtricksh" size="6" type="number" value="250" /> px</td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr><td width="60%"><label for="Skgtricks"> LikeBox Position</label>:</td>
+<td width="40%"><select class="select-box" id="Skgtricks" name="Skgtricks">
+<option value="1">Left</option>
+<option value="2">Right</option> 
+<option value="3">Top</option> 
+<option value="4">Bottom</option> 
+</select></td></tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width="60%"><label for="Skgtricksof">Offset</label>:</td>
+<td width="40%"><input class="text-input" id="Skgtricksof" name="Skgtricksof" size="6" type="number" value="100" /> px</td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr><td width="60%"><label for="Skgtrickscolorscheme"> Likebox Color Scheme</label>:</td>
+<td width="40%"><select class="select-box" id="Skgtrickscolorscheme" name="Skgtrickscolorscheme">
+<option value="light">Light</option>
+<option value="dark">Dark</option>  
+</select></td></tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width="60%"><label for="Skgtricksbgcolor">Likebox Background Color</label>:</td>
+<td width="40%"><input class="inputcolor text-input" id="Skgtricksbgcolor" name="Skgtricksbgcolor" size="6" type="text" value="F5EBF5" /><span class="colorbox"></span></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width="60%"><label for="Skgtricksbordercolor">Likebox Border Color</label>:</td>
+<td width="40%"><input class="inputcolor text-input" id="Skgtricksbordercolor" name="Skgtricksbordercolor" size="6" type="text" value="C4C4C4" /><span class="colorbox"></span></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width="60%"><label for="Skgtricksbadgecolor">FB Badge Color</label>:</td>
+<td width="40%"><input class="inputcolor text-input" id="Skgtricksbadgecolor" name="Skgtricksbadgecolor" size="6" type="text" value="3B5998" /><span class="colorbox"></span></td>
+</tr>
+</tbody></table>
+</form>
+</fieldset>
+<br />
+<center>
+<input onclick="javascript:Skgtrickscodegen();" style="font-size: 20px; font-weight: bold; width: 180px;" type="button" value="Generate" />
+<input disabled="disabled" name="go" style="font-size: 20px; font-weight: bold; width: 180px;" type="submit" value="Add to Blogger" /><br /><textarea name="widget.content" style="display: none;"></textarea></center>
+</div>
+<br />
+<br />
+<br />
+<center>
+<small> Copyright © <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> All Rights Reserved by Shivam garg @ <a href="http://skgtricks.blogspot.com/">Skgtricks</a></small></center>
